@@ -1,16 +1,16 @@
-# 🎭 Détecteur multimodal d'émotions
+#  Détecteur multimodal d'émotions
 
 Application de détection d'émotions apparentes à partir de trois sources : **le visage**, **la voix** et **le texte**. Chaque modalité a son propre modèle de deep learning (TensorFlow / Keras) et l'interface Streamlit permet de tester chacune d'elles et de comparer les résultats.
 
-> ⚠️ Cette application détecte des émotions *apparentes*. Elle ne peut en aucun cas diagnostiquer un problème de santé mentale.
+>  Cette application détecte des émotions *apparentes*. Elle ne peut en aucun cas diagnostiquer un problème de santé mentale.
 
 ## Fonctionnalités
 
 | Modalité | Entrée | Modèle | Dataset |
 |----------|--------|--------|---------|
-| 📸 Vision | Photo (jpg, png) | CNN (images 48×48, niveaux de gris) | [FER2013](https://www.kaggle.com/datasets/msambare/fer2013) |
-| 🎤 Audio | Fichier wav / mp3 | MLP sur features audio (MFCC, etc.) | [RAVDESS](https://www.kaggle.com/datasets/uwrfkaggle/ravdess-emotional-speech-audio) |
-| ✍️ Texte | Phrase en français | LSTM | Petit dataset généré par `src/text/create_dataset.py` |
+|  Vision | Photo (jpg, png) | CNN (images 48×48, niveaux de gris) | [FER2013](https://www.kaggle.com/datasets/msambare/fer2013) |
+|  Audio | Fichier wav / mp3 | MLP sur features audio (MFCC, etc.) | [RAVDESS](https://www.kaggle.com/datasets/uwrfkaggle/ravdess-emotional-speech-audio) |
+|  Texte | Phrase en français | LSTM | Petit dataset généré par `src/text/create_dataset.py` |
 
 Les 7 émotions : colère, dégoût, peur, joie, tristesse, surprise, neutre.
 
