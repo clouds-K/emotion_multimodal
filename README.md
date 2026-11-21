@@ -89,9 +89,8 @@ Les modèles sont enregistrés dans `data/models/` (`vision_model.h5`, `audio_mo
 streamlit run app/simple_app.py
 ```
 
-L'application charge les modèles depuis `data/models/` : il faut donc les avoir entraînés (ou téléchargés) avant.
+L'application charge les modèles depuis `data/models/`. Les modèles entraînés sont fournis dans le dépôt : l'application fonctionne donc directement après l'installation.
 
-<!-- Si tu publies tes modèles dans les Releases GitHub, ajoute ici le lien de téléchargement. -->
 
 ## Résultats
 
