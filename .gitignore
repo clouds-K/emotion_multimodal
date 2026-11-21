@@ -1,10 +1,11 @@
-venv/
+﻿venv/
 __pycache__/
 *.pyc
-data/
+data/*
+!data/models/
+*_best.h5
 *.pth
 *.pt
-*.h5
 *.ckpt
 .ipynb_checkpoints/
 .env
